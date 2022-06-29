@@ -1,7 +1,23 @@
-import React from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 const SimpleScreen = () => {
+  const [state, setState] = useState(2);
+
+  useEffect(() => {
+    // * here you'll write your code
+    return () => {
+      // ! cleanup
+    };
+  }, []);
+
+  useEffect(() => {
+    // * here you'll write your code
+    return () => {
+      // ! cleanup
+    };
+  }, [state]);
+
   const styles = StyleSheet.create({
     text1: {
       margin: 5,
@@ -34,6 +50,7 @@ const SimpleScreen = () => {
       fontFamily: 'Poppins-Black',
     },
   });
+
   return (
     <View>
       <Text style={styles.text1}>Hey Hello</Text>

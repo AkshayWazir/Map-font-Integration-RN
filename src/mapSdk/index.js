@@ -6,7 +6,7 @@ import mapTemplate from './map-template';
 export default function MapView() {
   let webRef = useRef();
   let [mapCenter, setMapCenter] = useState('-121.913, 37.361');
-  console.log(mapTemplate('W4U9W1egg68zInj87GwxQSEx3GEGpEgw'));
+  
 
   const onButtonPress = () => {
     const [lng, lat] = mapCenter.split(',');
